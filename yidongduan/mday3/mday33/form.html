@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.xb{
+				width: 12px;
+				height:12px;
+				display: inline-block;
+				background: url(img/no.png) no-repeat center center;
+				background-size:100% 100%;
+			}
+			.s:checked+label{
+				background: url(img/yes.png) no-repeat center center;
+			}
+			.s,.fx{
+				display: none;
+			}
+			
+			.lb{
+				width:32px;
+				height: 12px;
+				display: inline-block;
+				background: url(img/2.jpg);
+				background-size:100% 100%;
+				border-radius: 12px;
+			}
+			.fx:checked+label{
+				background: url(img/22.jpg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<form>
+			<input type="radio"  name="sex" value="male" id="male" class="s"/><label class="xb" for="male" ></label> 男
+			<input type="radio" name="sex" value="female" id="female" class="s" /><label class="xb" for="female" /></label>女	
+			
+			
+			<input type="checkbox" class="fx" id="yes" class="f" /><label class="lb" for="yes"></label>
+			<input type="checkbox" class="fx" id="no" class="f" /><label class="lb" for="no"></label>
+		</form>
+	</body>
+</html>
