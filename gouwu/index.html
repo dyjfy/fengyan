@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" href="css/new_file.css" />
+    <script src="js/angular.js" ></script>
+    <script type="text/javascript" src="js/jquery-1.11.1.js" ></script>
+    <link rel="stylesheet" type="text/css" href="myfont/font_3l2h3uy7wopqfr/iconfont.css">
+    <script type="text/javascript">
+//  	
+// 		document.addEventListener('plusready', function(){
+// 			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+// 			
+// 		});
+// 		
+    </script>
+    <script>
+    	document.documentElement.style.fontSize=innerWidth/16+"px";
+    </script>
+    <script></script>
+</head>
+<body>
+	<div class="warp">
+		<header class="header">
+			<span class="icon iconfont icon-back"></span>
+			<i>订单</i>
+		</header>
+		<section>
+			<ul>
+				<li>
+					<img src="img/1.png" />
+					<div class="nav">
+						<p>天添饺子馆</p>
+						<span>￥9.00</span><i class="icon iconfont icon-more"></i>
+						<p class="pp">2015.12.05</p>
+					</div>
+					<div class="fot">
+						<span>待支付</span>
+						<input type="button" name="" id="" value="立即支付" />
+						<input type="button" name="" class="but" id="zi" value="取消订单" />
+						
+					</div>
+				</li>
+				<li>
+					<img src="img/2.png" />
+					<div class="nav">
+						<p>戎城人家</p>
+						<span>￥26.00</span><i class="icon iconfont icon-more"></i>
+						<p class="pp">2015.12.04</p>
+					</div>
+					<div class="fot">
+						<span>已支付</span>
+						<input type="button" name="" id="rong" value="确认收货" />
+						<input type="button" class="but"  name="" id="cheng" value="取消订单" />
+						
+					</div>
+				</li>
+				<li>
+					<img src="img/3.png" />
+					<div class="nav">
+						<p>中国兰州拉面</p>
+						<span>￥37.00</span><i class="icon iconfont icon-more"></i>
+						<p class="pp">2015.12.03</p>
+					</div>
+					<div class="fot">
+						<span>已支付</span>
+						<input type="button" name="" id="" value="确认收货" />
+						<input type="button" class="but"  name="" id="lan" value="取消订单" />
+						
+					</div>
+				</li>
+				<li>
+					<img src="img/1.png" />
+					<div class="nav"> 
+						<p>天添饺子馆</p>
+						<span>￥9.00</span><i class="icon iconfont icon-more"></i>
+						<p class="pp">2015.12.05</p>
+					</div>
+					<div class="fot">
+						<span>待支付</span>
+						<input type="button" name="" id="" value="立即支付" />
+						<input type="button" class="but"  name="" id="but" value="取消订单" />
+						
+					</div>
+				</li>
+				<li>
+					<img src="img/1.png" />
+					<div class="nav">
+						<p>天添饺子馆</p>
+						<span>￥9.00</span><i class="icon iconfont icon-more"></i>
+						<p class="pp">2015.12.05</p>
+					</div>
+					<div class="fot">
+						<span>待支付</span>
+						<input type="button" name="" id="" value="立即支付" />
+						<input type="button" class="but"  name="" id="jieshu" value="取消订单" />
+						
+					</div>
+				</li>
+				<li>
+					<img src="img/2.png" />
+					<div class="nav">
+						<p>戎城人家</p>
+						<span>￥26.00</span><i class="icon iconfont icon-more"></i>
+						<p class="pp">2015.12.04</p>
+					</div>
+					<div class="fot">
+						<span>已支付</span>
+						<input type="button" name="" id="rong" value="确认收货" />
+						<input type="button" class="but"  name="" id="cheng" value="取消订单" />
+						
+					</div>
+				</li>
+			</ul>
+			
+			
+		</section>
+		<footer>
+      <a href="">
+        <i class="icon iconfont icon-shouye1"></i>
+        <span>首页</span>
+      </a>
+      <a href="">
+        <i class="icon iconfont icon-shouye15"></i>
+        <span>订单</span>
+      </a>
+      <a href="">
+        <i class="icon iconfont icon-shouye3"></i>
+        <span>我的</span>
+      </a>
+      <a href="">
+        <i class="icon iconfont icon-shouye6"></i>
+        <span>商城</span>
+      </a>
+       <a href="">
+        <i class="icon iconfont icon-set"></i>
+        <span>设置</span>
+      </a>
+    </footer>
+	</div>
+	<script>
+	var buts=document.getElementsByClassName("but");
+//	console.log(buts.length);
+	/*for(var i=0;i<buts.length;i++){
+		buts[i].addEventListener("touchstart",function(){
+//			console.log(this.parentElement);
+            console.log(this.parentNode.parentNode);
+           this.parentElement.parentElement.remove;
+		})
+	}*/
+	$(function(){
+//		console.log($(".but").length);
+//		console.log($(".but").parent());
+//		console.log($(".but").parent().parent());
+        $(".but").on("click",function(){
+        	console.log($(this).parent().parent());
+        	$(this).parent().parent().remove();
+        })
+	})
+		
+	</script>
+	
+</body>
+</html>
