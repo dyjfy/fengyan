@@ -1,0 +1,163 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	background: #f9f7f8;
+}
+
+
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.header {
+	width: 100%;
+	height: 2.5rem;
+	background: rgb(254, 77, 61);
+	color: white;
+	text-align: center;
+	position: fixed;
+	top:0;
+	z-index: 10;
+
+}
+
+.header span {
+	cursor: pointer;
+	line-height: 2.5rem;
+	font-size: 1rem;
+	position: absolute;
+	left: 10%;
+}
+
+.header i {
+	line-height: 2.5rem;
+	font-size: 1.4rem;
+	cursor: pointer;
+	font-style: normal;
+}
+
+
+
+ul {
+	overflow: auto;
+	list-style: none;
+	padding-left: 5%;
+	width: 95%;
+	padding-bottom: 2.5rem;
+	list-style: none;
+}
+
+li {
+	width: 100%;
+}
+
+li img {
+	width: 4rem;
+	height: 4rem;
+	margin: 0.5rem 0;
+	float: left;
+}
+input{
+	border: 0;
+	outline:0 ;
+	float: right;
+	margin-right:1rem ;
+}
+
+section {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgb(240, 240, 240);
+	padding-top: 2.5rem;
+
+}
+
+.nav {
+	margin: 0.5rem 0 0.5rem 0.5rem;
+	float: left;
+	font-size: 1rem;
+	width: auto;
+}
+
+.nav i {
+	position: absolute;
+	right: 1rem;
+	font-weight: 800;
+	color: saddlebrown;
+	font-size: 1.5rem;
+}
+
+.fot {
+	clear: both;
+	width: 100%;
+	height: 2.5rem;
+	line-height: 2.5rem;
+	border-top: 1px solid wheat;
+}
+
+.fot span {
+	color: red;
+}
+
+.nav span {
+	color: rgb(144, 144, 144);font-size: 0.8rem;
+}
+
+.pp {
+	color: rgb(144, 144, 144);font-size: 0.8rem;
+}
+
+.fot input:nth-child(3) {
+	width: 3rem;
+	height: 1.5rem;
+	font-size: 0.7rem;
+	
+
+}
+.fot input:nth-child(2){width: 3rem;
+	height: 1.5rem;
+	font-size: 0.7rem;
+	
+	background: rgb(254, 77, 61);
+}
+footer {
+  width: 100%;
+  height: 2.5rem;
+  background: #f9f9f0;
+  display: flex; 
+  position: fixed;
+  bottom: 0;}
+  footer a {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+    footer a i.icon {
+      position: relative; }
+      footer a i.icon em {
+        width: 0.1rem;
+        height: 0.1rem;
+        display: inline-block;
+        border-radius: 50%;
+        background: #f50;
+        position: absolute;
+        top: 0;
+        right: -.05rem; }
+    footer a i.icon, footer a span {
+      color: #3d4245;
+      font-size: .9rem; }
+    footer a span {
+      font-size: .7rem; }
+    footer a:hover i.icon, footer a:hover span {
+      color: #f50; }
